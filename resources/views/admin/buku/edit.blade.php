@@ -22,10 +22,6 @@
             <label for="stok">Stok</label>
             <input type="number" name="stok" class="form-control" value="{{ $buku->stok }}" required>
         </div>
-        <div class="form-group">
-            <label for="keterangan">Keterangan</label>
-            <textarea name="keterangan" class="form-control" rows="3">{{ $buku->keterangan }}</textarea>
-        </div>
         <button type="submit" class="btn btn-primary mt-3">Update</button>
     </form>
 </div>

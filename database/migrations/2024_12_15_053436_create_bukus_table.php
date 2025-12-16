@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('pengarang');
             $table->year('tahun_terbit');
             $table->integer('stok');
+            // $table->text('keterangan')->nullable();
             $table->timestamps();
         });
     }

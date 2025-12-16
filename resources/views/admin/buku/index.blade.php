@@ -17,7 +17,6 @@
                 <th>Pengarang</th>
                 <th>Tahun Terbit</th>
                 <th>Stok</th>
-                <th>Keterangan</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -29,7 +28,6 @@
                 <td>{{ $buku->pengarang }}</td>
                 <td>{{ $buku->tahun_terbit }}</td>
                 <td>{{ $buku->stok }}</td>
-                <td>{{ $buku->keterangan ?? '-' }}</td>
                 <td>
                     <a href="{{ route('admin.buku.edit', $buku->id) }}" class="btn btn-warning">Edit</a>
                     <form action="{{ route('admin.buku.destroy', $buku->id) }}" method="POST" style="display:inline;">
