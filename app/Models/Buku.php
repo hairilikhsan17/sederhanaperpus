@@ -9,7 +9,7 @@ class Buku extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['judul', 'pengarang', 'tahun_terbit', 'stok'];
+    protected $fillable = ['judul', 'pengarang', 'tahun_terbit', 'stok', 'keterangan'];
 
     // Relasi ke Peminjaman
     public function peminjamans()
